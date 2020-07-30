@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans',sans-serif;
+    margin: 0;
+}
+
+.flex--between, .flex--evenly, .flex--start {
+    display: flex;
+    align-items: center;
+}
+
+.flex--between {
+    justify-content: space-between;  
+}
+
+.flex--evenly {
+    justify-content: space-evenly;
+}
+
+.flex--start {
+    justify-content: flex-start;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+ }
+
+ .flex-container-row {
+    display: flex;
+ }
+
+.container {
+    margin: 70px 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 5px 50px;
+}
+
+nav .logo {
+    width: 60%;
+    text-align: left;
+}
+
+nav .logo, h2 {
+    font: 40px 'Sacramento', sans-serif;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    text-align: center;
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #DAA520;
+    font-size: 14px;
+}
+
+h1 {
+    font: 5rem 'Sacramento', sans-serif;
+    color: #DAA520;
+    text-shadow: 1px 0 10px #ffd700;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Sacramento', sans-serif;
+}
+
+.jumbotron h4, p {
+    font-family: 'Work Sans',sans-serif;
+    color: #DAA520;
+}
+
+.jumbotron {
+    height: 100vh;
+    background-image: url("../images/bg1-min.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+#content {
+    width: 72%;
+    margin: 0 0 0 20px;
+    padding: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(000, 000, 000, 0.2);
+}
+
+section {
+    background: rgb(247, 209, 181, 0.9);
+    border: 1px solid white;
+    outline: 8px solid rgb(247, 209, 181, 0.9);
+    margin: 20px;
+    padding: 0 50px;
+}
+
+section h3 {
+    color: #5C5C60;
+    border-bottom: 1px solid #5C5C60;
+}
+
+article p {
+    font-family: 'Bad Script', sans-serif;
+    color: #5C5C60;
+    margin: 0;
+}
+
+.address {
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 0 20px 2px rgba(000, 000, 000, 0.2);
+    padding: 50px;
+    border-radius: 6px;
+}
+
+hr {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #DAA520;
+    border-block-start: unset;
+}
+
+#rsvp {
+    box-shadow: 10px 10px 20px #DAA520, -10px -10px 20px #FFEB3B;
+    border-radius: 6px;
+    margin: 70px 50px;
+    padding: 10px 20px 50px;
+}
+
+.rsvp-form {
+    margin: 20px 100px 50px;
+}
+
+.rsvp-form input {
+    padding: 10PX 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #5C5C60;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #5C5C60;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus, button:active {
+    outline: none;
+}
+
+.map--responsive {
+    border: 2px solid #DAA520;
+    overflow: hidden;
+    padding-bottom: 46%;
+    margin: 20px;
+    position: relative;
+    height: 0;
+}
+
+.card-wrapper {
+    width: 25%;
+    height: 1933px;
+}
+
+.card-templates {
+    position: sticky;
+    top: 0;
+}
+
+.greeting-card {
+    background: white;
+    padding: 70px 20px;
+    margin: 20px 10px 20px 20px;
+}
+
+.name-card, .second-layer {
+    height: 145px;
+}
+
+.name-card {
+    background: #171717;
+    padding: 0 20px;
+    margin: 20px 10px 20px 20px;
+    position: relative;
+}
+
+.profile-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.name-card .photo-profile {
+    position: relative;
+    width: 115px;
+    height: 115px;
+}
+
+.center--element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-card img {
+    width: 80px;
+}
+
+.hexagon, .hexagon-black {
+    position: relative;
+    transform: rotate(90deg);
+}
+
+.hexagon {
+    background: #171717;
+    width: 100px;
+    height: 50px;
+}
+
+.hexagon-black {
+    background: black;
+    width: 115px;
+    height: 60px;
+    filter: blur(4px);
+}
+
+.hexagon::before, .hexagon::after, 
+.hexagon-black::before, .hexagon-black::after {
+    content: "";
+    position: absolute;
+}
+
+.hexagon::before, .hexagon::after {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon-black::before, .hexagon-black::after {
+    border-left: 58px solid transparent;
+    border-right: 58px solid transparent;
+}
+
+.hexagon::before, .hexagon-black::before {
+    bottom: 100%;
+    left: 0;
+}
+
+.hexagon::after, .hexagon-black::after {
+    top: 100%;
+    right: 0;
+}
+
+.hexagon::before {
+    border-bottom: 33px solid #171717;
+}
+
+.hexagon::after {
+    border-top: 33px solid #171717;
+}
+
+.hexagon-black::before {
+    border-bottom: 38px solid black;
+}
+
+.hexagon-black::after {
+    border-top: 38px solid black;
+}
+
+.arrange-1 {
+    z-index: 1;
+}
+.arrange-2 {
+    z-index: 2;
+}
+.arrange-3 {
+    z-index: 3;
+}
+.arrange-4 {
+    z-index: 4;
+}
+
+.second-layer {
+    background: #DAA520;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.second-layer::before {
+    content: "";
+    position: absolute;
+    border-left: 72.5px solid transparent;
+    border-right: 72.5px solid transparent;
+    border-bottom: 50px solid #171717;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: rotate(270deg);
+}
+
+.biodata {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.biodata h1, .biodata span, .biodata .contact p {
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+
+.biodata h1 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 0.5;
+}
+
+.biodata span {
+    font-size: 12px;
+}
+
+.biodata .contact {
+    margin-top: 8px;
+}
+
+.biodata .contact img {
+    width: 10px;
+    margin-right: 5px;
+}
+
+.biodata .contact p {
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.greeting-card .message {
+    width: 100%;
+    border-bottom: 1px dashed #5C5C60;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 14px;
+ }
+
+.greeting-card .message p {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+ }
+
+.greeting-card .greeting-list {
+    display: none;
+    height: 130px;
+    overflow-y: scroll;
+    padding-right: 10px;
+ }
+
+.relativetime-clean {
+    color: #9199a1 !important;
+    font-size: 10px;
+}
+
+.empty-list img {
+    width: 50%;
+}
+
+.empty-list p {
+    font-family: "Work Sans", sans-serif;
+}
+
+.rsvp-form span {
+    font-size: 12px;
+    display: block;
+    color: red;
+    text-align: left;
+    padding-left: 20px;
+    display: none;
+}
+
+footer {
+    background: #DAA520;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 10px solid #ffb600;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer span {
+    font-size: 12px;
+}
+
+footer p, footer span {
+    color: #e9e9e9;
+}
+
+ /* scrollbar message*/
+.greeting-list::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.greeting-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.greeting-list::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+}
+
+.greeting-list::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    border-radius: 20px;
+}
+
+/* end of scrollbar message */
+
+
+/* mobile responsive */
+
+.mobile-navbar {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+.nav-icon {
+    width: 40px !important;
+    transition: all 0.2s ease-out;
+}
+
+@keyframes slide-bar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 180px;
+    }
+}
+
+.mobile-navbar ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 70px 20px;
+    width: 180px;
+    animation: slide-bar 0.2s ease-out;
+    text-align: left;
+    padding-right: 20px;
+    z-index: 3;
+}
+
+.mobile-navbar ul a {
+    color: white;
+    border-bottom: 1px solid #DAA520;
+}
+
+.mobile-navbar ul li {
+    margin: 10px 0;
+}
+
+.bg {
+    background: rgba(000, 000, 000, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        padding: 5px 10px;
+    }
+
+    nav .logo {
+        font-size: 25px;
+        z-index: 3;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    .mobile-navbar i {
+        position: relative;
+        display: inline-block;
+        width: 25px;
+        height: 2px;
+        top: -7px;
+        background: #DAA520;
+        z-index: 3;
+    }
+
+    .mobile-navbar i::before, .mobile-navbar i::after {
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: #DAA520;
+        position: absolute;
+        left: 0;
+    }
+
+    .mobile-navbar i::before {
+        top: -7px;
+    } 
+
+    .mobile-navbar i::after {
+        top: 7px;
+    }
+
+    main {
+        display: block;
+    }
+
+    .event-wrapper {
+        display: block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 40px 0 10px;
+        line-height: 1;
+    }
+
+    #content, aside {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    section {
+        margin: 10px auto;
+        padding: 0 30px;
+    }
+
+    section h3 {
+        font-size: 16px;
+    }
+
+    article p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .address {
+        padding: 15px 0;
+    }
+
+    #rsvp {
+        box-shadow: 3px 3px 10px #DAA520, -3px -3px 10px #FFEB3B;
+        margin: 30px 5px;
+        padding: 10px 20px 20px;
+    }
+
+    .rsvp-form {
+        margin: 10px 0;
+    }
+
+    .rsvp-form input {
+        padding: 5PX 10px;
+        font-size: 12px;
+    }
+
+    .rsvp-form span {
+        font-size: 10px;
+        padding-left: 12px;
+    }
+    
+    button {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .map--responsive {
+        margin: 20px 5px;
+    }
+
+    .card-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    aside {
+        height: auto;
+    }
+
+    aside .card {
+        box-shadow: 0 20px 20px 2px rgba(000, 000, 000, 0.2);
+        border-radius: unset;
+    }
+
+    .greeting-card {
+        border-top: 5px dotted #DAA520;
+    }
+
+    .greeting-card h3 {
+        margin-top: 0;
+    }
+
+    .greeting-card .greeting-list {
+        margin-right: 10px;
+        padding: 0 10px 0 20px;
+    }
+
+    .greeting-card .message {
+        font-size: 10px;
+    }
+
+    .relativetime-clean {
+        font-size: 8px;
+    }
+
+    .empty-list img {
+        width: 35%;
+    }
+
+    .name-card {
+        margin: 20px 0;
+        border-radius: 6px !important;
+    }
+
+    .name-card img {
+        width: 70px;
+    }
+
+    .hexagon {
+        width: 80px;
+        height: 50px;
+    }
+
+    .hexagon::before, .hexagon::after {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+    }
+
+    .hexagon::before {
+        border-bottom: 22px solid #171717;
+    }
+
+    .hexagon::after {
+        border-top: 22px solid #171717;
+    }
+
+    .hexagon-black {
+        width: 90px;
+        height: 55px;
+    }
+
+    .hexagon-black::before, .hexagon-black::after {
+        border-left: 45px solid transparent;
+        border-right: 45px solid transparent;
+    }
+
+    .hexagon-black::before {
+        border-bottom: 25px solid black;
+    }
+
+    .hexagon-black::after {
+        border-top: 25px solid black;
+    }
+
+    .biodata {
+        margin-left: 0;
+    }
+
+    .biodata h1 {
+        font-size: 14px;
+    }
+
+    .biodata span {
+        font-size: 10px;
+    }
+
+    .name-card, .second-layer {
+        height: 120px;
+    }
+
+    .second-layer {
+        width: 75px;
+    }
+
+    .second-layer::before {
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 50px solid #171717;
+    }
+
+    footer {
+        padding: 8px 0;
+        border-top: 8px solid #ffb600;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer span {
+        font-size: 10px;
+    }
+}
+
+/* end of mobile responsive */
