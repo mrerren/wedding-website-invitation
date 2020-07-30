@@ -46,7 +46,7 @@ body {
  }
 
 .container {
-    margin: 70px 20px;
+    margin: 0 20px 70px;
     text-align: center;
 }
 
@@ -143,6 +143,10 @@ section {
 section h3 {
     color: #5C5C60;
     border-bottom: 1px solid #5C5C60;
+}
+
+#content article {
+    padding-top: 50px !important;
 }
 
 article p {
